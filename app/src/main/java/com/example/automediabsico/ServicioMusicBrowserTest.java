@@ -61,7 +61,7 @@ public class ServicioMusicBrowserTest extends MediaBrowserService {
     }
 
     private void handlePlay() {
-        if(mPlayer.isPlaying()){
+        //if(mPlayer.isPlaying()){
             mPlayer.seekTo(0);
             mSession.setPlaybackState(buildState(PlaybackState.STATE_PLAYING));
             mSession.setMetadata(mCurrentTrack);
@@ -85,7 +85,7 @@ public class ServicioMusicBrowserTest extends MediaBrowserService {
                 }
             });
             mPlayer.prepareAsync();
-        }
+        //}
     }
 
     @Override
